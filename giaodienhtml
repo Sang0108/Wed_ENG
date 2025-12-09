@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Quản lý Học tập</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import icon từ Font Awesome -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">Manager Dashboard</div>
+            <nav>
+                <!-- Super Link 1: Từ vựng (Màu xanh dương) -->
+                <a href="#vocabulary" id="nav-vocab" class="nav-item active" data-color="#4a69ff">
+                    <i class="fas fa-book"></i> Quản lý Từ vựng
+                </a>
+                <!-- Super Link 2: Ngữ pháp (Màu xanh lá) -->
+                <a href="#grammar" id="nav-grammar" class="nav-item" data-color="#28a745">
+                    <i class="fas fa-spell-check"></i> Quản lý Ngữ pháp
+                </a>
+                <!-- Super Link 3: Báo cáo (Màu cam) -->
+                <a href="#reports" id="nav-reports" class="nav-item" data-color="#ff7f50">
+                    <i class="fas fa-chart-bar"></i> Báo cáo & Thống kê
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1 id="main-title">Quản lý Từ vựng</h1>
+                <p>Quản lý và thống kê tiến độ học tập của bạn.</p>
+            </header>
+
+            <!-- Content Sections (Chỉ 1 cái hiển thị tại 1 thời điểm) -->
+            
+            <!-- Section 1: Vocabulary (Active by default) -->
+            <section id="vocabulary-section" class="content-section active-section">
+                <h2>Danh sách Từ vựng</h2>
+                <div class="card">
+                    <h3>Thêm từ mới</h3>
+                    <p>Form nhập từ, nghĩa, ví dụ, loại từ (động/danh/tính).</p>
+                    <button class="btn-primary">Thêm Từ Mới</button>
+                </div>
+                <div class="card">
+                    <h3>Tổng số từ đã học: 150</h3>
+                </div>
+            </section>
+
+            <!-- Section 2: Grammar (Hidden by default) -->
+            <section id="grammar-section" class="content-section">
+                <h2>Cấu trúc Ngữ pháp</h2>
+                <div class="card">
+                    <h3>Thêm cấu trúc ngữ pháp</h3>
+                    <p>Form thêm cấu trúc (VD: Hiện tại đơn), công thức, ví dụ chi tiết.</p>
+                    <button class="btn-primary">Thêm Cấu trúc</button>
+                </div>
+                <div class="card">
+                    <h3>Tổng số cấu trúc đã nắm: 25</h3>
+                </div>
+            </section>
+
+            <!-- Section 3: Reports (Hidden by default) -->
+            <section id="reports-section" class="content-section">
+                <h2>Báo cáo & Thống kê</h2>
+                <div class="card">
+                    <h3>Tiến độ học tập</h3>
+                    <p>Biểu đồ cột/tròn hiển thị số từ học được theo tháng. Sử dụng Canvas JS để vẽ.</p>
+                </div>
+                <div class="card">
+                    <h3>Mục tiêu tuần này</h3>
+                    <p>Đạt 50 từ mới - Đã hoàn thành 80%</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html
